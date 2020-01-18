@@ -1,10 +1,14 @@
 FROM node:dubnium as build
 
 WORKDIR /build
+ 
+COPY .  /build 
 
-COPY . /opt/app
+RUN npm install \
+    && npm run build \
+    && npm prune --production
 
-RUN yarn
+CMD ["npm", "run","start:container"]
 
-CMD yarn watch 
+
 
