@@ -1,8 +1,8 @@
-FROM node:12
+FROM node:dubnium as build
+
+WORKDIR /build
 
 COPY . /opt/app
-
-WORKDIR /opt/app
 
 RUN yarn
 
