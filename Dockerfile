@@ -6,9 +6,10 @@ RUN mkdir /app
 WORKDIR /app
 
 COPY package.json package-lock.json ./
+COPY . ./
 
 RUN npm install --production
 
-COPY . .
+
 
 CMD ["npm", "start"]
