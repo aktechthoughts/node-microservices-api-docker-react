@@ -8,7 +8,7 @@ RUN npm install \
     && npm run build \
     && npm prune --production
 
-CMD ["npm", "run","start:container"]
+CMD ["npm", "run","watch"]
 
 
 
