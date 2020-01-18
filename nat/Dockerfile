@@ -1,0 +1,1 @@
+FROM nats-streaming:0.15.1-linux
