@@ -2,7 +2,14 @@
   "name": "node-microservices-api-docker-react",
   "version": "1.0.0",
   "description": "My Moleculer microservices project",
+  "scripts": {
+    "start": "node src\\index.js"
+  },
   "keywords": [
     "express"
-  ]
+  ],
+  "devDependencies": {
+    "express": ">4.0.0",
+    "ejs": "3.0.1"
+  }
 }
