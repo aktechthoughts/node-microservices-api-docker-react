@@ -1,15 +1,13 @@
 {
   "name": "node-microservices-api-docker-react",
   "version": "1.0.0",
-  "description": "My Moleculer microservices project",
+  "description": "Node.js on Docker",
+  "author": "Abhishek kumar<abhishek_ku@yahoo.com>",
+  "main": "server.js",
   "scripts": {
-    "start": "node src//index.js"
+    "start": "node server.js"
   },
-  "keywords": [
-    "express"
-  ],
-  "devDependencies": {
-    "express": ">4.0.0",
-    "ejs": "3.0.1"
+  "dependencies": {
+    "express": "^4.16.1"
   }
 }
