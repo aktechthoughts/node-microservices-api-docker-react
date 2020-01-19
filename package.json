@@ -5,10 +5,12 @@
   "author": "Abhishek kumar<abhishek_ku@yahoo.com>",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "st:mo": "moleculer-runner"
   },
   "dependencies": {
     "express": "^4.16.1",
+    "moleculer": "^0.13.12",
     "moleculer-web": "^0.8.5"
   }
 }
