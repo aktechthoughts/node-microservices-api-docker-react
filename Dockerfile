@@ -8,12 +8,21 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
+<<<<<<< HEAD
 RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
 
 # Bundle app source
 COPY . .
+=======
+COPY package.json package-lock.json ./
+COPY . ./
+
+RUN npm install --production
+
+
+>>>>>>> parent of 72fe4779... Added docker-compose.yml
 
 EXPOSE 8080
 CMD [ "node", "server.js" ]
